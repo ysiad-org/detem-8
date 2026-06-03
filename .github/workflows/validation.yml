@@ -7,11 +7,4 @@ on:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Temporary validation
-        run: echo "Temporary managed workflow"
+    uses: ysiad-org/common-actions/.github/workflows/blank.yml@main
